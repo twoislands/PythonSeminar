@@ -1,10 +1,10 @@
 """
 Rock-paper-scissors-lizard-Spock template
-#####################################
+-----------------------------------------
 SCRIBBLER:	TwoIslandS
 WEBSITE:	http://twoislands.net
 VERSION:	0.3 beta
-#####################################
+-----------------------------------------
 The key idea of this program is to equate the strings
 "rock", "paper", "scissors", "lizard", "Spock" to numbers
 as follows:
@@ -20,12 +20,9 @@ as follows:
 import random
 
 # FUNCTIONS
-
 def name_to_number(guess):
-    """
-    name_to_numbers function converts the users choice into
-    a number option of the game
-    """
+    #name_to_numbers function converts the users choice into
+    #a number option of the game
     if guess == "rock":
         player_number = 0
     elif guess == "Spock":
@@ -40,12 +37,9 @@ def name_to_number(guess):
         print "Game Over. Please choose one of the available options"
     return player_number
 
-
 def number_to_name(number):
-    """
-    number_to_name function assigns one of game's option
-    to the random generated number
-    """
+    #number_to_name function assigns one of game's option
+    #to the random generated number
     if number == 0:
         user_draw = "rock"
     elif number == 1:
@@ -61,10 +55,8 @@ def number_to_name(number):
     return user_draw
 
 def rpsls(name):
-    """ 
-    rpsls fuction will choose the winner based on 
-    Rock-paper-scissors-lizard-Spock rules
-    """  
+    #rpsls fuction will choose the winner based on 
+    #Rock-paper-scissors-lizard-Spock rules
     player_number = name_to_number(name)
     print "Player chooses",name
   
